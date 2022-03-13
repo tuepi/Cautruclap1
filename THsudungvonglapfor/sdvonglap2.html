@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<p id="demo"></p>
+<input type="text" id="nhap" placeholder="Nhập số nguyên bất kỳ">
+<button onclick="tinh()">Tính tổng</button>
+<script>
+    function tinh() {
+        let nhap = document.getElementById("nhap").value;
+        let i = 1
+        let S = 0;
+        for (; i <= nhap; i++) {
+            S = S + i;
+            // alert(S)
+        }
+
+        document.getElementById("demo").innerHTML = "Tổng là " + S;
+    }
+</script>
+</body>
+</html>
